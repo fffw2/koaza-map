@@ -117,7 +117,7 @@ lyr__0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr__19741978_2.set
 var layersList = [lyr__0,lyr_OpenStreetMap_1,lyr__19741978_2,lyr__19611969_3,lyr__2008_4,lyr_kusatsu_city_koaza_map_5];
 lyr_kusatsu_city_koaza_map_5.set('fieldAliases', {'Name': '小字', '大字': '大字', 'ID': 'ID', '備考': '備考', '旧村': '旧村', '読み': '読み', 'AZA_NO': 'AZA_NO', '登記存在フラグ': '登記存在フラグ', });
 lyr_kusatsu_city_koaza_map_5.set('fieldImages', {'Name': 'TextEdit', '大字': 'TextEdit', 'ID': 'TextEdit', '備考': 'TextEdit', '旧村': 'TextEdit', '読み': 'TextEdit', 'AZA_NO': 'TextEdit', '登記存在フラグ': 'TextEdit', });
-lyr_kusatsu_city_koaza_map_5.set('fieldLabels', {'Name': 'header label', '大字': 'header label', 'ID': 'header label', '備考': 'header label', '旧村': 'header label', '読み': 'header label', 'AZA_NO': 'header label', '登記存在フラグ': 'header label', });
+lyr_kusatsu_city_koaza_map_5.set('fieldLabels', {'Name': 'inline label', '大字': 'inline label', 'ID': 'inline label', '備考': 'header label', '旧村': 'inline label', '読み': 'inline label', 'AZA_NO': 'inline label', '登記存在フラグ': 'inline label', });
 lyr_kusatsu_city_koaza_map_5.set('fieldDisplayKeys', ['Name', '読み', '大字', '旧村', '備考']);
 lyr_kusatsu_city_koaza_map_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
