@@ -320,9 +320,6 @@ var style_kusatsu_city_koaza_map_5 = function(feature, resolution){
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 1.0;
-    var textAlign = "left";
-    var offsetX = 8;
-    var offsetY = 3;
     var placement = 'point';
     if (feature.get("Name") !== null) {
         labelText = String(feature.get("Name"));
