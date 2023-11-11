@@ -293,7 +293,7 @@ var onSingleClick = function(evt) {
                     }
                 }
             } else {
-                currentFeatureKeys = currentFeature.getKeys();
+                currentFeatureKeys = layer.get('fieldDisplayKeys');
                 if (doPopup) {
                     popupText += '<li><table>';
                     for (var i=0; i<currentFeatureKeys.length; i++) {
