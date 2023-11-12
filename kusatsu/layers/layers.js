@@ -75,7 +75,7 @@ var lyr_kusatsu_city_koaza_map_5 = new ol.layer.Vector({
                 title: '草津市小字地図'
         });
 
-lyr__0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr__19741978_2.setVisible(true);lyr__19611969_3.setVisible(true);lyr__2008_4.setVisible(true);lyr_kusatsu_city_koaza_map_5.setVisible(true);
+lyr__0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr__19741978_2.setVisible(false);lyr__19611969_3.setVisible(false);lyr__2008_4.setVisible(false);lyr_kusatsu_city_koaza_map_5.setVisible(true);
 var layersList = [lyr__0,lyr_OpenStreetMap_1,lyr__19741978_2,lyr__19611969_3,lyr__2008_4,lyr_kusatsu_city_koaza_map_5];
 lyr_kusatsu_city_koaza_map_5.set('fieldAliases', {'Name': '小字', '大字': '大字', 'ID': 'ID', '備考': '備考', '旧村': '旧村', '読み': '読み', 'AZA_NO': 'AZA_NO', '登記存在フラグ': '登記存在フラグ', });
 lyr_kusatsu_city_koaza_map_5.set('fieldImages', {'Name': 'TextEdit', '大字': 'TextEdit', 'ID': 'TextEdit', '備考': 'TextEdit', '旧村': 'TextEdit', '読み': 'TextEdit', 'AZA_NO': 'TextEdit', '登記存在フラグ': 'TextEdit', });
