@@ -72,7 +72,7 @@ var lyr_kusatsu_city_koaza_map_5 = new ol.layer.Vector({
                 source:jsonSource_kusatsu_city_koaza_map_5, 
                 style: style_kusatsu_city_koaza_map_5,
                 interactive: true,
-                title: 'kusatsu_city_koaza_map'
+                title: '草津市小字地図'
         });
 
 lyr__0.setVisible(true);lyr_OpenStreetMap_1.setVisible(true);lyr__19741978_2.setVisible(true);lyr__19611969_3.setVisible(true);lyr__2008_4.setVisible(true);lyr_kusatsu_city_koaza_map_5.setVisible(true);
