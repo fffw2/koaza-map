@@ -68,7 +68,7 @@ var jsonSource_kusatsu_city_koaza_map_5 = new ol.source.Vector({
 });
 jsonSource_kusatsu_city_koaza_map_5.addFeatures(features_kusatsu_city_koaza_map_5);
 var lyr_kusatsu_city_koaza_map_5 = new ol.layer.Vector({
-                declutter: true,
+                declutter: false,
                 source:jsonSource_kusatsu_city_koaza_map_5, 
                 style: style_kusatsu_city_koaza_map_5,
                 interactive: true,
