@@ -316,7 +316,18 @@ var style_kusatsu_city_koaza_map_5 = function(feature, resolution){
     var value = feature.get("大字");
     var labelText = "";
     size = 0;
-    var labelFont = "13.0px \'Hiragino Maru Gothic Pro\', sans-serif";
+    var zoom = map.getView().getZoom();
+    var fontSize;
+    if (zoom >= 12 && zoom < 15) {
+        fontSize = 0;
+    } else if (zoom >= 15 && zoom < 16) {
+        fontSize = 8;
+    } else if (zoom >= 16 && zoom < 17) {
+        fontSize = 10;
+    } else if (zoom >= 17 && zoom <= 18) {
+        fontSize = 13;
+    }
+    var labelFont = fontSize + "px \'Hiragino Maru Gothic Pro\', sans-serif";
     var labelFill = "#323232";
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
