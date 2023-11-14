@@ -16,7 +16,7 @@ var wms_layers = [];
         var lyr_OpenStreetMap_1 = new ol.layer.Tile({
             'title': 'OpenStreetMap',
             'type': 'base',
-            'opacity': 1.000000,
+            'opacity': 0.8,
             
             
             source: new ol.source.XYZ({
