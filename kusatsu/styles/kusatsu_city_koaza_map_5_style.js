@@ -315,16 +315,17 @@ var style_kusatsu_city_koaza_map_5 = function(feature, resolution){
     };
     var value = feature.get("大字");
     var labelText = "";
+    if (feature.get("Name") !== null) {
+        labelText = String(feature.get("Name"));
+    }
     size = 0;
     var zoom = map.getView().getZoom();
     var fontSize;
-    if (zoom >= 12 && zoom < 15) {
-        fontSize = 0;
-    } else if (zoom >= 15 && zoom < 16) {
-        fontSize = 8;
-    } else if (zoom >= 16 && zoom < 17) {
-        fontSize = 10;
-    } else if (zoom >= 17 && zoom <= 18) {
+    if (zoom >= 12 && zoom < 14.6) {
+        labelText = "";
+    } else if (zoom >= 14.6 && zoom < 16) {
+        fontSize = zoom * 5 - 67; // 6〜13
+    } else if (zoom >= 16 && zoom <= 18) {
         fontSize = 13;
     }
     var labelFont = fontSize + "px \'Hiragino Maru Gothic Pro\', sans-serif";
@@ -332,9 +333,6 @@ var style_kusatsu_city_koaza_map_5 = function(feature, resolution){
     var bufferColor = "#fafafa";
     var bufferWidth = 3.0;
     var placement = 'point';
-    if (feature.get("Name") !== null) {
-        labelText = String(feature.get("Name"));
-    }
     
 var style = categories_kusatsu_city_koaza_map_5(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
