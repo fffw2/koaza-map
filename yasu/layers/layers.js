@@ -35,6 +35,8 @@ lyr_yasu_city_koaza_map_1.set('fieldImages', {'小字': 'TextEdit', '大字': 'T
 lyr_yasu_city_koaza_points_2.set('fieldImages', {'小字': 'TextEdit', '大字': 'TextEdit', '旧村': 'TextEdit', '備考': 'TextEdit', 'ID': 'Range', });
 lyr_yasu_city_koaza_map_1.set('fieldLabels', {'小字': 'inline label', '大字': 'inline label', '旧村': 'inline label', '備考': 'header label', 'ID': 'inline label', });
 lyr_yasu_city_koaza_points_2.set('fieldLabels', {'小字': 'inline label', '大字': 'inline label', '旧村': 'inline label', '備考': 'header label', 'ID': 'inline label', });
+lyr_yasu_city_koaza_map_1.set('fieldDisplayKeys', ['小字', '大字', '旧村', '備考']);
+lyr_yasu_city_koaza_points_2.set('fieldDisplayKeys', ['小字', '大字', '旧村', '備考']);
 lyr_yasu_city_koaza_points_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
