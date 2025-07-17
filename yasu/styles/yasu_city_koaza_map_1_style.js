@@ -201,10 +201,10 @@ var style_yasu_city_koaza_map_1 = function(feature, resolution){
     size = 0;
     var zoom = map.getView().getZoom();
     var fontSize;
-    if (zoom >= 12 && zoom < 14.6) {
+    if (zoom >= 12 && zoom < 14) {
         labelText = "";
-    } else if (zoom >= 14.6 && zoom < 16) {
-        fontSize = zoom * 5 - 67; // 6〜13
+    } else if (zoom >= 14 && zoom < 16) {
+        fontSize = zoom * 5 - 67; // 3〜13
     } else if (zoom >= 16 && zoom <= 18) {
         fontSize = 13;
     }
