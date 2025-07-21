@@ -43,7 +43,7 @@ case '野洲':
                               bufferWidth)
     })];
                     break;
-case '川田':
+case '竹生':
                     return [ new ol.style.Style({
         stroke: new ol.style.Stroke({color: 'rgba(35,35,35,0.5)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1}),fill: new ol.style.Fill({color: 'rgba(89,163,216,0.5)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
